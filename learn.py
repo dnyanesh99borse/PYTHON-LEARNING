@@ -642,12 +642,146 @@
 #         print(f"Root 1 = {real_part} + {imag_part}i")
 #         print(f"Root 2 = {real_part} - {imag_part}i")
 
-s1 = float(input("Enter side 1: "))
-s2 = float(input("Enter side 2: "))
-s3 = float(input("Enter side 3: "))
-if s1 == s2 == s3:
-    print("This is Equilateral Triangle")
-elif s1 == s2 or s2 == s3 or s3 == s1:
-    print("The triangle is Isoceles triangle")
-else:
-    print("The triangle is a Scalen triangle")
+# s1 = float(input("Enter side 1: "))
+# s2 = float(input("Enter side 2: "))
+# s3 = float(input("Enter side 3: "))
+# if s1 == s2 == s3:
+#     print("This is Equilateral Triangle")
+# elif s1 == s2 or s2 == s3 or s3 == s1:
+#     print("The triangle is Isoceles triangle")
+# else:
+#     print("The triangle is a Scalen triangle")
+
+
+
+#----------STRINGS AND CONDITIONAL STATEMENTS----------
+#String is a data type that stores a sequence of characters
+
+# str1 = "this is a string"
+# str2 = 'this is also a string'
+# str3 = '''this is also a valid string''' 
+#this triple qotes we use in case when we wants to use single apostropee so thus we use 
+#triple qote
+
+
+#ESCAPE SEQUENCE CHARACTERS#
+#this are the special type of characters we use for the particular tasks like
+# whenever we want to provide space in betn to diff. sentences and all then we use 
+# these sequence charcters
+
+# and thus to print the next sentence on the next line we use the escape sequence character 
+# '\n'
+
+# str1 = "this is a string. \nwe are creating it in python"
+# print(str1)
+
+# str2 = "this is a string. \twe are creating it in python"
+# print(str1)
+
+
+#----------OPERATIONS ON STRINGS-----------------
+# #1) concatination
+# str1 = "i am a "
+# str2 = "billionaire"
+# print(str1+str2)
+
+# str1 = "i am a "
+# str2 = "billionaire"
+# fstr = str1+str2
+# print(fstr)
+
+
+# #2) Length of string
+# print(len(str1))
+# print(len(str2))
+# print(len(fstr))
+# #in python any letter,number,digit,spaces,specialchar. also counts during length
+
+
+#INDEXING
+#In pyton we use the idexing for accessing elemens and here also indexing start from 0.
+#we cannot manipulate strings using indexing.
+# str1 = "billionaire  "
+# print(str1[3])
+# print(str1[12])
+
+
+#------------------SLICING IN PYTHON: VIMP FOR MACHINE LEARNING-----------------
+#slicing allows accessing parts of a string. 
+#ending index is not included in the slicing means it will stop on last index and dont add 
+#....add that last index element in our sliced part. 
+#like in below example it included the l of index 2 but didn't included o of index 5.
+
+str1 = "billionaire"
+print(str1[2:5])
+
+# str2 = "i am a billionaire"
+# print(str2[7:18])
+
+# str2 = "i am a billionaire"
+# print(str2[7:len(str2)])
+
+# str3 = "billionaire"
+# print(str3[0:18])
+
+# str3 = "billionaire"
+# print(str3[:18])
+
+# str3 = "billionaire"
+# print(str3[1:])
+
+# str3 = "billionaire"
+# print(str3[0:])
+
+# str3 = "billionaire"
+# print(str3[:])
+
+#---------------backward indexing in python----------------
+#we can also access string elements in reverse order using negative indexing.
+#negative indexing starts from -1 and goes backwards to -n where n is the length of th
+#string.
+
+str = "Apple"
+print(str[-3:-1])
+
+str = "Apple"
+print(str[-3:])
+
+#--------string functions-----------
+str = "I am a billionaire"
+print(str.endswith("re")) #returns true if string ends with substr
+
+str = "I am a billionaire"
+print(str.endswith("xyz")) #returns true if string ends with substr
+
+str = "billionaire"
+print(str.capitalize()) #capitalizes 1st char
+print(str.capitalize()) 
+
+#but like the below execution we can change in our original string. 
+str = str.capitalize()
+print()
+print(str)
+#capitalize creates a new string and not changes in old string
+
+# print(str.replace(old, new)) #replaces all occurences of old with new
+str = "i am a billionaire"
+print(str.replace("b","M"))
+
+str = "i am a billionaire"
+print(str.replace("billionaire","Trillionaire"))
+
+
+print(str.find(word)) #returns 1st index of 1st occurence"
+str = "i am a billionaire"
+print(str.find("i"))
+
+print(str.find("a"))
+
+print(str.find("am"))
+
+print(str.count("am")) #counts the occurences of substr in string.
+str = ("i i i am a billionaire billionaire")
+print(str.count("i"))
+
+print(str.count("billionaire"))
