@@ -785,3 +785,91 @@ str = ("i i i am a billionaire billionaire")
 print(str.count("i"))
 
 print(str.count("billionaire"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ print(str2[7:len(str2)])
+
+# str3 = "billionaire"
+# print(str3[0:18])
+
+# str3 = "billionaire"
+# print(str3[:18])
+
+# str3 = "billionaire"
+# print(str3[1:])
+
+# str3 = "billionaire"
+# print(str3[0:])
+
+# str3 = "billionaire"
+# print(str3[:])
+
+#---------------backward indexing in python----------------
+#we can also access string elements in reverse order using negative indexing.
+#negative indexing starts from -1 and goes backwards to -n where n is the length of th
+#string.
+
+str = "Apple"
+print(str[-3:-1])
+
+str = "Apple"
+print(str[-3:])
+
+#--------string functions-----------
+str = "I am a billionaire"
+print(str.endswith("re")) #returns true if string ends with substr
+
+str = "I am a billionaire"
+print(str.endswith("xyz")) #returns true if string ends with substr
+
+str = "billionaire"
+print(str.capitalize()) #capitalizes 1st char
+print(str.capitalize()) 
+
+#but like the below execution we can change in our original string. 
+str = str.capitalize()
+print()
+print(str)
+#capitalize creates a new string and not changes in old string
+
+# print(str.replace(old, new)) #replaces all occurences of old with new
+str = "i am a billionaire"
+print(str.replace("b","M"))
+
+str = "i am a billionaire"
+print(str.replace("billionaire","Trillionaire"))
+
+
+print(str.find(word)) #returns 1st index of 1st occurence"
+str = "i am a billionaire"
+print(str.find("i"))
+
+print(str.find("a"))
+
+print(str.find("am"))
+
+print(str.count("am")) #counts the occurences of substr in string.
+str = ("i i i am a billionaire billionaire")
+print(str.count("i"))
+
+print(str.count("billionaire"))
