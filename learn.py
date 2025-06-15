@@ -799,16 +799,63 @@
 
 #--------CONDITIONAL STATEMENTS--------------
 #IF-ELIF-ELSE:
-age = 21
-if age >= 18:
-    print("you are eligible to voteL")
+# age = 21
+# if age >= 18:
+#     print("you are eligible to voteL")
+# else:
+#     print("you are not eligible to vote")
+
+
+# marks = int(input("Enter the marks of the student: "))
+# if (marks >= 90):
+#     grade = "A"
+# elif (marks >= 80 and marks < 90):
+#     grade = "B"
+# elif (marks >= 70 and marks <80):
+#     grade = "C"
+# else:
+#     grade = "D"
+# print("grade of the student: ",grade)
+
+
+# age = 34
+# if(age == 34):
+#     if(age <= 50):
+#         print("your are eligible for the job")
+#     else:
+#         print("you are not eligible for the job")
+# else:
+#     print("you are also not elgible for  ")
+
+
+#---------------LETS PRACTICE---------------------------
+#WAP TO CHECK IF A NUMBER ENTERED BY THE USER IS ODD OR EVEN.
+# num = int(input("Enter a number: "))
+# if(num % 2 == 0):
+#     print("the number is even")
+# else:
+#     print("the number is odd")
+
+#WAP TO FIND THE GREATEST OF 3 NUMBERS ENTERED BY THE USER.
+# n1 = int(input("Enter the first num: "))
+# n2 = int(input("Enter a second num: "))
+# n3 = int(input("Enter a third num: "))
+
+# if (n1 == n2 and n2 == n3):
+#     print("all three numbers are equal")
+# elif(n1 >= n2 and n1 >= n3):
+#     print("n1 is gratest of all three num")
+# elif(n2 >= n1 and n2 >= n3):
+#     print("n2 is greatest of all three")
+# else:
+#     print("n3 is greatest of all three")
+
+
+
+#WAP to check if a number is a multiple of 7 or not.
+
+num = int(input("Enter a number: "))
+if (num % 7 == 0):
+    print("the number is a multiple of 7")
 else:
-    print("you are not eligible to vote")
-
-
-
-
-
-
-
-
+    print("the number is not a multiple of 7")
