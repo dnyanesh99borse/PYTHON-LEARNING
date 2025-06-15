@@ -854,8 +854,16 @@
 
 #WAP to check if a number is a multiple of 7 or not.
 
-num = int(input("Enter a number: "))
-if (num % 7 == 0):
-    print("the number is a multiple of 7")
-else:
-    print("the number is not a multiple of 7")
+# num = int(input("Enter a number: "))
+# if (num % 7 == 0):
+#     print("the number is a multiple of 7")
+# else:
+#     print("the number is not a multiple of 7")
+
+
+#-------------LISTS IN PYTHON-------------------
+#list is a built in datatype that stores set of values, it can store elements of different 
+# datatypes(integer,float,string)
+
+marks = [87,64,33,95,76]
+   
