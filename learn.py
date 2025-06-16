@@ -864,6 +864,85 @@
 #-------------LISTS IN PYTHON-------------------
 #list is a built in datatype that stores set of values, it can store elements of different 
 # datatypes(integer,float,string)
+#its like a Array in other languages.
 
-marks = [87,64,33,95,76]
-   
+# marks = [87,64,33,95,76]
+# print(marks)
+
+# print(type(marks))
+# print(marks[0])
+# print(marks[1])
+
+# print(len(marks))
+# #REMEMBER: string is immutable(can't change) in python and 
+# # list is mutable(can change) in python.
+
+# student = ["karan",95.8,"delhi"]
+# print(student[0])
+# student[0] = "Dnyanesh"
+# print(student)
+
+
+#SINCE THERES ALSO A INDEXING IN LIST, HENCE SLICING ALSO TAKES PLACE IN LIST:
+# marks = [25,56.5,78,90]
+
+# print(marks[0:3]) #will print all indexes from 0 to 2
+# #will not include ending index
+
+# print(marks[1:2])
+# print(marks[:3])
+# print(marks[0:])
+
+# print(marks[-1:-3])
+# print(marks[-2:])
+# print(marks[-3:-1])
+
+
+#---------------------LIST METHODS-------------------
+#append() : adds an element at the end of the list
+# marks = [34,56,78,76,47]
+# marks.append(99)
+# print(marks)
+
+# #sort: this method sorts the list in ascending order
+
+# print(marks.sort())
+# print(marks)
+
+# #Reverse = True: to sort the List into descending order. 
+# marks.sort(reverse = True)
+# print(marks)
+
+# list = ["grapes","banana","Apple",]
+# list.sort()
+# print(list)
+# list.sort(reverse = True)
+
+#reverse: reverse the original list
+# marks = [34,56,78,76,47]
+# marks.reverse()
+# print(marks)
+
+# #INSERT: insert's the elements at any particular index
+# list = [4,3,5,3,2,5]
+# list.insert(1,99)
+# print(list)
+
+#Remove: removes first occurence of element
+# list = [88,67,77,88,58]
+# list.remove(88)
+# print(list)
+
+# #POP: removes the element of any specific index.
+# list = [34,35,95,88,38]
+# list.pop(1)
+# print(list)
+  
+
+
+#-------------------------TUPLES----------------------------
+'''tuples are similar to list and array, it is a built in data type that lets us create 
+immutable sequences of values.'''
+
+#i.e: tupples are similar to array in another languages, both are immutable.
+
