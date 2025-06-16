@@ -1014,4 +1014,137 @@ else it will assume it as other datatypes.'''
 # list.sort()
 # print(list)
 
+# #========================================DICTIONARY================================
+# '''DICTIONARIES ARE USED TO STORE DATA VALUES IN KEY:VALUE PAIRS,IN SIMPLE WAY THE CONCEPT OF THE DICTIONARY IN THE PYTHON  
+# IS INPIRED FROM OUR REAL LIFE WORDS MEANING FINDING DICTIONARY CONCEP, LIKE WISE HERE IN PYTHON IN THIS CONCEPT THE DICTIONARIES WORKS ON 
+# KEY: PAIR CONCEPT. WHERE WE CAN FIND ANY OF THE ELEMENT THROUGH THE KEY AND WE CAN FIND ITS RESPECTIVE VALUE, THE VALUE CAN BE THE LIST, 
+# THE STRING, OR ANY DATATYPE OF THE PYTHON.. THEY ARE UNORDERED, MUTABLE(CHANGEABLE)AND DON'T ALLOW DUPLICATE KEYS'''
 
+# #EG: OF DICTIONARY: 
+# info = {
+#     "name": "Dnyanesh",
+#     "age": 20,
+#     "passion": "billionaire",
+#     "hobbies": ["reading","swimming","gaming"],
+#     "address": {
+#         "street": "street no 1",
+#         "city": "pune",
+#         "country": "india"
+#     },
+#     "is_adult": True,
+#     12: 89,
+# }
+
+# print(info)
+# print(type(info))
+
+# '''THERES NOT A METHOD OF INDEXING IN DICTIONARY, SO HERE WE CAN ACCESS THE ELMENTS OF 
+# THE DICITONARY THROUGH THAT SPECIFIC KEY,
+# #WHERE IT HAS THE SYNTAX:
+# # info["key"]'''
+
+# print(info["name"]),
+# print(info["passion"])
+
+# info["passion"] = "Successfull_billionaire"
+# print(info)
+# print(info["passion"])
+
+# #we can also create null dictionary:
+# dict = {}
+# print(dict)
+
+# dict["name"] = "Dnyanesh"
+# print(dict)
+
+
+#--------------------------NESTED DICTIONARIES---------------------
+# student = {
+#     "name": "Dnyanesh",
+#     "age": 20,
+#     "address": {
+#         "street": "street no 1",
+#         "city": "pune",
+#         "country": "india"
+#         },
+#         "hobbies": ["reading","swimming","gaming"],
+#         "is_adult": True,
+#     "marks": {
+#         "maths": 90,
+#         "science": 85,
+#     }
+# }
+
+# print(student["marks"])
+# print(student["marks"]["maths"])
+# print(student["hobbies"][0])
+# # print(student["hobbies"][1])
+
+
+
+#------------------METHODS IN DICTIONARY---------------
+#1) dict.keys: this fuctions return all the functions present in that dictionary
+# student = {
+#     "name": "Dnyanesh",
+#     "Subjects": {
+#         "maths" : 83,
+#         "science": 45.
+#     },
+# }
+
+# print(student.keys())
+
+# #we can type cast this key values in list:
+# print(list(student.keys()))
+
+# #to get a length or total no. of keys:
+# print(len(student.keys()))
+
+# #2) dict.values(): this function return all the values present in that dictionary
+# print(student.values())
+# #we can type cast this key values in list:
+# print(list(student.values()))
+
+#3) Dict.items(): this method returns all  (key,val) pairs as tuples
+# print(student.items())
+# #we can type cast this key values in list:
+# print(list(student.items()))
+
+#4) dict.get("key"): this method returns the value for a given key if it exists in th
+# dictionary. If not, it returns a default value that you specify.
+# print(student.get("name"))
+# print(student.get("age"))
+# print(student.get("age", "Not available"))
+# print(student.get("age", "Not available", "Not available"))
+
+
+# #4)Dict.update(newDict): this method allows us to insert new element in the dictionary.
+# student.update({"city": "Mumbai"})
+# print(student)
+
+# student.update({"city": "Mumbai","age": 19})
+# print(student)
+
+#=====================SETS IN PYYHON=============================
+# '''this concept of sets in python is as similar as in maths that we have studied,
+# SET is the collection of the unordered items. Each Element in  the set must be unique & immutable'''
+
+# #NOTE: LIST AND DICTIONRIES CAN'T BE STORE IN SET,CAUSE THEY BOTH ARE MUTTABLE AND SET NOT.
+
+# collection = {1,2,3,4,5,6}
+# print(collection)
+
+# print(type(collection))
+
+# #as per the property of set if w'll try to add any duplicate values in set then 
+# #it simply ignores the other values and just keep the one of it.
+# set = {1,2,3,4,5,5,5,6,7,9,9}
+# print(set)
+
+# setu = {1,2,3,"hello","world"}
+# print(setu)
+
+#------HOW TO CREATE AN EMPTYY SEST------
+emptyset = {}
+print(emptyset)
+print(type(emptyset)) 
