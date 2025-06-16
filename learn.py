@@ -946,3 +946,72 @@ immutable sequences of values.'''
 
 #i.e: tupples are similar to array in another languages, both are immutable.
 
+# tup = (2,1,3,4,5,6)
+# print(type(tup))
+
+# print(tup)
+
+# print(tup[0])
+# print(tup[1])
+# #tup[0]: asssignment will not take place in tuple cause they are immutable
+
+# tup = ()
+# print(tup)
+# print(type(tup))
+
+
+'''========it is mandatory to use comma after each element in tuple then only it will assume it as tuple 
+else it will assume it as other datatypes.'''
+# tup = (1)
+# print(type(tup))
+
+# tuple =(1,)  #for single value it is mandatory comma
+# print(type(tuple))
+
+#--------------------SLICING IN TUPLES--------------------------
+'''SLICING IN TUPLES IS ALSO AS SIMILAR AS IN LISTS AND STRINGS'''
+# tup = (1,2,3,4,5,6)
+# print(tup[0:3]) #it will print 1,2,3
+# print(tup[3:6]) #it will print 4,5,6
+# print(tup[:3]) #it will print 1,2,3
+
+
+#-----------------TUPLE METHODS-----------------------
+# tup = (1,2,3,4,5,6,4,99,6,4)
+# print(tup.count(4)) #it will print 1
+# print(tup.index(4)) #it will print 3
+#this index method returns first occuring index of that element
+
+#LETS PRACTICE.
+# '''WAP to ask the use to enter names of their 3 favourite movies and store them in a list'''
+# m1 = (input("Eneter first movie name: "))
+# m2 = input("Enter second movie name: ")
+# m3 = input("Enter third movie name: ")
+
+# movies = [m1,m2,m3]
+# print(movies)
+
+
+'''WAP TO check if a list contains a palindrome of elements.'''
+# list1 = [1,2,3,2,1]
+# list1.reverse()
+# list2 = list1
+# print(list1)
+# print(list2)
+
+# if list1 == list2:
+#     print("list1 is palindrome")
+# else: 
+#     print("list1 is not palindrome")
+
+
+# '''WAP TO COUNT THE NUMBER OF STUDENTS WITH THE "A" GRADE IN THE FOLLOWING TUPLE.'''
+# tup = ('A','B','A','C','A','B','A')
+# print(tup.count("A"))
+
+# '''WAP TO STORE THE ABOVE VALUES IN A LIST AND SORT THEM FROM "A" TO "D" '''
+# list = ["C","D","A","B","A"]
+# list.sort()
+# print(list)
+
+
